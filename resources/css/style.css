@@ -14,8 +14,6 @@
 }
 
 .centered {
-    height: 400px;
-    width: 800px;
     background: red;
     display: flex;
     flex-direction: column;
