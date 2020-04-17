@@ -108,6 +108,17 @@ h2 {
     background-color: rgb(245, 174, 22);
 }
 
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid var(--primary-orange);
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    border: 1px solid var(--primary-orange);
+    color: var(--primary-white);
+}
+
 .container {
     width: 1140px;
     margin: 20px auto 0 auto;
