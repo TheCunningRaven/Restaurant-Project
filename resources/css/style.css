@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+html {
+    color: rgb(44, 44, 44);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(./img/hero.jpg);
+    height: 100vh;
+}
+
 :root {
     --primary-white: #FFFFFF;
     --primary-blue: #20B8CF;
@@ -29,12 +48,6 @@
     clear: both;
 }
 
-body {
-    font-family: sans-serif, Helvetica, Arial;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
 h1,
 h2 {
     color: var(--primary-colour);
@@ -50,18 +63,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-.main-text {
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-.author-text {
-    font-size: 22px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 10px;
-}
-
 .container {
     width: 1140px;
     margin: 20px auto 0 auto;
@@ -72,30 +73,4 @@ h2 {
     float: left;
     padding-right: 30px;
     position: relative;
-}
-
-.other-posts {
-    width: 25%;
-    float: left;
-}
-
-.author-box {
-    padding-top: 20px;
-    border-top: 1px solid #808080;
-}
-
-.other {
-    margin-bottom: 40px;
-}
-
-.author-box img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-}
-
-.blog-post img {
-    height: 150px;
-    width: auto;
 }
