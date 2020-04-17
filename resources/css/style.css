@@ -100,7 +100,6 @@ h2 {
 .btn-empty:link,
 .btn-empty :visited {
     border: 1px solid var(--primary-orange);
-    background-color: rgba(255, 255, 255, 0);
     color: #FFFFFF;
 }
 
