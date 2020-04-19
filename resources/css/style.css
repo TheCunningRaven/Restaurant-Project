@@ -19,23 +19,6 @@ html {
     margin: 0 auto;
 }
 
-header {
-    background-image: linear-gradient(#000000a1, #000000a1), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    /* background-image: url(/resources/css/img/hero.jpg); */
-    height: 100vh;
-}
-
-.header-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Moves image 50% of its width and height up to the left*/
-}
-
 :root {
     --primary-white: #FFFFFF;
     --primary-blue: #20B8CF;
@@ -162,64 +145,25 @@ h2:after {
 }
 
 
-/* PARAGRAPHS */
-
-.long-copy {
-    line-height: 160%;
-    width: 70%;
-    margin-left: 15%;
-}
-
-.box p {
-    font-size: 90%;
-    line-height: 140%;
-}
-
-
-/* BUTTONS */
-
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    border-radius: 200px;
-    text-decoration: none;
-    transition: background-color 0.3s, border 0.2s, color 0.3s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-    background-color: var(--primary-orange);
-    border: 1px solid var(--primary-orange);
-    color: #000000;
-    margin-right: 10px;
-}
-
-.btn-empty:link,
-.btn-empty :visited {
-    border: 1px solid var(--primary-orange);
-    color: #FFFFFF;
-}
-
-.btn:hover,
-.btn:active {
-    background-color: rgb(245, 174, 22);
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid rgb(245, 174, 22);
-}
-
-.btn-empty:hover,
-.btn-empty:active {
-    border: 1px solid rgb(245, 174, 22);
-    color: var(--primary-white);
-}
-
-
 /* HEADER */
+
+header {
+    background-image: linear-gradient(#000000a1, #000000a1), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(/resources/css/img/hero.jpg); */
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Moves image 50% of its width and height up to the left*/
+}
 
 .logo {
     height: 100px;
@@ -254,6 +198,68 @@ h2:after {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid var(--primary-orange);
+}
+
+
+/* PARAGRAPHS */
+
+.long-copy {
+    line-height: 160%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 140%;
+}
+
+
+/* BUTTONS */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: background-color 0.3s, border 0.2s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: var(--primary-orange);
+    border: 1px solid var(--primary-orange);
+    color: #000000;
+    margin-right: 10px;
+}
+
+.btn-empty:link,
+.btn-empty :visited,
+input[type=submit] {
+    border: 1px solid var(--primary-orange);
+    color: #FFFFFF;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgb(245, 174, 22);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid rgb(245, 174, 22);
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    border: 1px solid rgb(245, 174, 22);
+    color: var(--primary-white);
 }
 
 
@@ -361,4 +367,194 @@ section.steps {
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+
+/* TESTIMONIALS */
+
+section.testimonials {
+    background-image: linear-gradient( #000000b9, #000000b9), url(./img/back-customers.jpg);
+    background-size: cover;
+    color: var(--primary-white);
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+    /* THE PARENT ELEMENT OF AN ABSOLUTELY POSITIONED ELEMENT MUST BE RELATIVELY POSITIONED */
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+
+/* THESE ARE CALLED ISO CHARACTERS - SEARCH CSS-TRICKS.COM */
+
+cite img {
+    margin-right: 10px;
+    height: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/* SIGN UP SECTION */
+
+section.plans {
+    background-color: #f4f4f4;
+}
+
+.card {
+    background-color: var(--primary-white);
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 4px 4px #cecece;
+}
+
+.card div {
+    padding: 15px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 5px 0;
+}
+
+.card div:last-child {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.card div:first-child {
+    background-color: #f4f4f4;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: var(--tertiary-orange);
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+    /* HERE IT WILL INHERIT THE FONT SIZE OF THE PARENT ELEMENT (300%) */
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+
+/* FORM */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #f4f4f4;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(43, 43, 43);
+    padding: 20px;
+}
+
+footer p {
+    color: #969696;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-linksli a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #969696;
+    transition: color, 0.3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: rgb(211, 209, 209);
+}
+
+[name="logo-twitter"]:hover {
+    color: #00acee;
+}
+
+[name="logo-instagram"]:hover {
+    color: #3f729b;
+}
+
+[name="logo-facebook"]:hover {
+    color: #3b5998;
+}
+
+[name="logo-youtube"]:hover {
+    color: rgb(212, 18, 18);
 }
