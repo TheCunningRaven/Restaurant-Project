@@ -5,13 +5,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     color: rgb(44, 44, 44);
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .row {

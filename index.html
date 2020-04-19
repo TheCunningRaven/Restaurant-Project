@@ -3,11 +3,12 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> this tells smaller devices not to zoom
     <title>Document</title>
 </head>
 
@@ -34,10 +35,12 @@
         </nav>
         <div class="header-text-box">
             <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-            <a href="#" class="btn btn-full">I’m hungry </a>
-            <!-- <button class="btn btn-full">I'm Hungry</button> -->
-            <a href="#" class="btn btn-empty">Show me more </a>
-            <!-- <button class="btn btn-empty">Show me more</button> -->
+            <div class="header-buttons">
+                <a href="#" class="btn btn-full">I’m hungry </a>
+                <!-- <button class="btn btn-full">I'm Hungry</button> -->
+                <a href="#" class="btn btn-empty">Show me more </a>
+                <!-- <button class="btn btn-empty">Show me more</button> -->
+            </div>
         </div>
     </header>
     <section class="section-features">
@@ -366,7 +369,7 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="news">How did you find us</label>
+                        <label for="news">Sign up for our updates?</label>
                     </div>
                     <div class="col span-2-of-3">
                         <input type="checkbox" name="news" id="news" checked> Yes, please!
