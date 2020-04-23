@@ -1,12 +1,34 @@
 $(document).ready(function() {
 
     $('.js--section-features').waypoint(function(direction) {
-        if (direction === "down") {
-            $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
-        }
+            if (direction === "down") {
+                $('nav').addClass('sticky');
+            } else {
+                $('nav').removeClass('sticky');
+            }
+        })
+        // ANIMATIONS
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animated fadeIn')
+    }, {
+        offset: '65%'
     })
+    $('.js--wp-2').waypoint(function(direction) {
+        $('.js--wp-2').addClass('animated fadeInUp')
+    }, {
+        offset: '65%'
+    })
+    $('.js--wp-3').waypoint(function(direction) {
+        $('.js--wp-3').addClass('animated fadeIn')
+    }, {
+        offset: '65%'
+    })
+    $('.js--wp-4').waypoint(function(direction) {
+            $('.js--wp-4').addClass('animated pulse')
+        }, {
+            offset: '65%'
+        })
+        // -------------------
     $('.js--scroll-to-plans').click(function() {
         $('html, body').animate({
             scrollTop: $("#plans-section").offset().top
@@ -37,5 +59,15 @@ $(document).ready(function() {
             scrollTop: $("header").offset().top
         }, 2000);
     });
+    $('.js--menu').click(function(e) {
+        var nav = $('.js--main-nav')
+            // var icon = $('ion-icon')
+        nav.slideToggle(200);
+        // console.log(e);
+        // if (icon.attr("name", "menu-outline")) {
+        //     icon.removeAttr(name);
+        // } else {
 
+        // }
+    });
 });

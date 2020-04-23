@@ -211,6 +211,23 @@ header {
 }
 
 
+/* MOBILE NAV */
+
+.mobile-menu {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon .mobile-menu {
+    margin-top: 12px;
+    font-size: 200%;
+    color: #fff;
+    text-decoration: none;
+}
+
+
 /* STICKY NAV */
 
 .sticky {
@@ -603,4 +620,26 @@ footer p {
 
 [name="logo-youtube"]:hover {
     color: rgb(212, 18, 18);
+}
+
+
+/* ANIMATIONS */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-1.animated,
+.js--wp-1.animated {
+    opacity: 1;
 }
