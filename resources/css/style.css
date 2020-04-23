@@ -242,6 +242,10 @@ header {
     cursor: pointer;
 }
 
+.sign-btn {
+    width: 200px;
+}
+
 
 /* PARAGRAPHS */
 
