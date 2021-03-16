@@ -207,7 +207,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid var(--primary-orange);
+    border-bottom: 2px solid white;
 }
 
 
