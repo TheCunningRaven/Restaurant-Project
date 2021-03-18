@@ -150,7 +150,7 @@ h2:after {
 /* HEADER */
 
 header {
-    background-image: linear-gradient(#000000a1, #000000a1), url(img/hero.jpg);
+    background-image: linear-gradient(#000000a1, #000000a1), url(img/hackerboy.jpg);
     background-size: cover;
     background-position: center;
     /* background-image: url(/resources/css/img/hero.jpg); */
@@ -436,7 +436,7 @@ section.steps {
 /* TESTIMONIALS */
 
 section.testimonials {
-    background-image: linear-gradient( #000000b9, #000000b9), url(./img/back-customers.jpg);
+    background-image: linear-gradient( #000000b9, #000000b9), url(./img/generic-laptop.jpg);
     background-size: cover;
     color: var(--primary-white);
     background-attachment: fixed;
