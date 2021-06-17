@@ -29,9 +29,9 @@ $(document).ready(function() {
             offset: '65%'
         })
         // -------------------
-    $('.js--scroll-to-plans').click(function() {
+    $('.js--scroll-to-contact').click(function() {
         $('html, body').animate({
-            scrollTop: $("#plans-section").offset().top
+            scrollTop: $("#contact").offset().top
         }, 2000);
     });
     $('.js--scroll-to-start').click(function() {
@@ -39,9 +39,9 @@ $(document).ready(function() {
             scrollTop: $(".section-features").offset().top
         }, 2000);
     });
-    $('.js--scroll-to-works').click(function() {
+    $('.js--scroll-to-testimonials').click(function() {
         $('html, body').animate({
-            scrollTop: $("#how-it-works").offset().top
+            scrollTop: $("#testimonials").offset().top
         }, 2000);
     });
     $('.js--scroll-to-signup').click(function() {

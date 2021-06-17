@@ -25,8 +25,8 @@ body {
     --primary-white: #FFFFFF;
     --primary-blue: #20B8CF;
     --secondary-blue: #99DEE9;
-    --primary-orange: #FFC853;
-    --secondary-orange: #FFF050;
+    --primary-orange: #c08300;
+    --secondary-orange: #f7e529;
     --tertiary-orange: rgb(255, 145, 0);
 }
 
@@ -97,11 +97,21 @@ a:visited {
     border-bottom: 1px solid var(--primary-orange);
     transition: border-bottom, 0.3s, color, 0.3s;
 }
+.email-link:link,
+.email-link:visited {
+    color: var(--primary-orange);
+    text-decoration: none;
+    border-bottom: none;
+}
 
 a:hover,
 a:active {
-    color: #3d3d3d;
+    color: #f19304;
     border-bottom: 1px solid transparent;
+}
+.email-link:hover{
+    color: #f19304!important;
+    border-bottom: none!important;
 }
 
 
@@ -614,8 +624,8 @@ footer p {
     color: #3f729b;
 }
 
-[name="logo-facebook"]:hover {
-    color: #3b5998;
+[name="logo-linkedin"]:hover {
+    color: #0072b1;
 }
 
 [name="logo-youtube"]:hover {
