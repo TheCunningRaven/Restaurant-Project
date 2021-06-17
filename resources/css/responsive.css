@@ -1,7 +1,16 @@
 /* Small phones */
-@media only screen and (max-width:577.98px) {
+@media only screen and (max-width:383px) {
     a {
         font-size: smaller;
+    }
+    p {
+        font-size: 98%;
+    }
+    div {
+        font-size: 98%;
+    }
+    .mail-link{
+        font-size: 110%;
     }
 }
 @media only screen and (max-width:577.98px) {
