@@ -1,5 +1,9 @@
 /* Small phones */
-
+@media only screen and (max-width:577.98px) {
+    a {
+        font-size: smaller;
+    }
+}
 @media only screen and (max-width:577.98px) {
     h1 {
         font-size: 150%;
